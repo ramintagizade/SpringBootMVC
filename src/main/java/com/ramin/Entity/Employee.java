@@ -1,7 +1,15 @@
 package com.ramin.Entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.stereotype.Repository;
+
+@Document
+@Repository
 public class Employee {
+    @Id
     private int id;
+
     private String name;
     private String profession;
 
